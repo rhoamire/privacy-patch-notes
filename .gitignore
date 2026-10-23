@@ -1,0 +1,39 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs and caches
+dist/
+build/
+coverage/
+.plasmo/
+.cache/
+.temp/
+.tmp/
+
+# Local databases and SQLite sidecars
+*.sqlite
+*.sqlite3
+*.db
+*-shm
+*-wal
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Local editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

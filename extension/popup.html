@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Privacy Patch Notes</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header__mark" aria-hidden="true">
+      <span class="mark-bar mark-bar--add"></span>
+      <span class="mark-bar mark-bar--remove"></span>
+    </div>
+    <div class="app-header__text">
+      <h1>Privacy Patch Notes</h1>
+      <p class="app-header__subtitle">Tracking <span id="source-count">&mdash;</span> policies</p>
+    </div>
+  </header>
+
+  <main id="content" aria-live="polite">
+    <div class="state state--loading" id="loading-state">
+      <p>Checking tracked sources&hellip;</p>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <span id="backend-indicator" class="backend-indicator">connecting&hellip;</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
